@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NaslovnaFragment">
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Dobrodošli"
+        android:textSize="25dp"
+        android:textColor="#12A89D"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/naslovIme"
+        android:layout_width="190dp"
+        android:layout_toRightOf="@id/naslov"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#12A89D"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista današnjih termina"
+        android:textSize="15dp"
+        android:textColor="#12A89D"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/naslov"
+        />
+    <ListView
+        android:id="@+id/listaTermina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title1"/>
+
+</RelativeLayout>

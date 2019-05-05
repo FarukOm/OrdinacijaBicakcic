@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.KorisnikNoviTermin_Fragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtDatumLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/txtDatum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Datum"
+            android:inputType="date"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="14dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_toRightOf="@id/txtDatumLayout"
+        android:src="@drawable/ic_date_range_white_24dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtVrijemeLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDatumLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/txtVrijeme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Vrijeme"
+            android:inputType="none"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="14dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btnTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtDatumLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_toRightOf="@id/txtVrijemeLayout"
+        android:src="@drawable/ic_access_time_white_24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtUslugaLayout"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVrijemeLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="16dp">
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinner_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:prompt="@string/spinnerTitle" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtNapomenaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUslugaLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/napomena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Napomena"
+            android:layout_marginRight="16dp"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="14dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round"
+        android:id="@+id/btnRezervisiTermin"
+        android:text="Rezerviši"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

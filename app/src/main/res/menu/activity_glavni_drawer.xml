@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/main_nav">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_naslovna"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Naslovna" />
+
+        <item
+            android:id="@+id/nav_naslovna2"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Naslovna" />
+        <item
+            android:id="@+id/nav_pacijenti"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Pacijenti" />
+
+        <item
+            android:id="@+id/nav_KorisnikTermini"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Termini" />
+
+        <item
+            android:id="@+id/nav_Kontakt"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Kontakt" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_question_mark"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_termini"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Termini" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_assignment_return_black_24dp"
+            android:title="Odjava" />
+    </group>
+
+
+</menu>

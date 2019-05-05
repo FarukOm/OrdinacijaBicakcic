@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/slikaEdit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="-20dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/Naslov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uređivanje kartona"
+            android:textSize="25dp"
+            android:textColor="#12A89D"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"/>
+        <TextView
+            android:id="@+id/podaci_naslov"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slikaEdit"
+            android:textSize="20dp"
+            android:text="Lični podaci: "
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/prezimeIme"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/podaci_naslov"
+            android:textSize="15dp"
+            android:text="Ime i prezime: "
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:id="@+id/imePrezimeUnos"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/podaci_naslov"
+            android:textSize="15dp"
+            android:layout_marginLeft="136dp"
+            />
+        <TextView
+            android:id="@+id/datumtxt"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prezimeIme"
+            android:textSize="15dp"
+            android:text="Datum rođenja: "
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:id="@+id/datumUnos"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prezimeIme"
+            android:textSize="15dp"
+            android:layout_marginLeft="136dp"
+            />
+        <TextView
+            android:id="@+id/adresatxt"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datumtxt"
+            android:textSize="15dp"
+            android:text="Adresa: "
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:id="@+id/adresaUnos"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datumtxt"
+            android:textSize="15dp"
+            android:layout_marginLeft="136dp"
+            />
+        <TextView
+            android:id="@+id/teltxt"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adresatxt"
+            android:textSize="15dp"
+            android:text="Telefon: "
+            android:layout_marginLeft="26dp"
+            />
+        <TextView
+            android:id="@+id/telefonUnos"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adresatxt"
+            android:textSize="15dp"
+            android:layout_marginLeft="136dp"
+            />
+        <TextView
+            android:id="@+id/listaTxt"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Lista pregleda: "
+            android:layout_below="@id/teltxt"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listaTxt"
+            android:layout_marginLeft="16dp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="#12A89D"
+        android:layout_gravity="bottom|end"
+        />
+</android.support.design.widget.CoordinatorLayout>

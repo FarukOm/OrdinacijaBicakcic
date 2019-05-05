@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/txtFirstLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Line"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtSecondLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFirstLine"
+        android:text="Second Line"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/txtThirdLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSecondLine"
+        android:text="Third Line"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

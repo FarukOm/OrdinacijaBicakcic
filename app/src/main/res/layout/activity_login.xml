@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:backgroundTint="#12A89D"
+        android:paddingTop="30dp"
+        android:textAlignment="textStart"
+        android:hint="Korisničko ime"
+        android:textSize="15dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlCompat,SpUsage" />
+
+    <EditText
+        android:id="@+id/Lozinka"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:layout_marginLeft="23dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Lozinka"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat,SpUsage" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lozinka"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round"
+        android:text="Login"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/btnRegistracija"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lozinka"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp"
+        android:background="@drawable/round"
+        android:text="Registracija"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

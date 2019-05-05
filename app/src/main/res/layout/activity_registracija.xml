@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slika"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_person_add_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slika"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:text="Registracija"
+        android:textColor="#12A89D"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/Ime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slika"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Ime"
+        android:paddingTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Prezime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ime"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Prezime"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Datum"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Prezime"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Datum rođenja"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnDatePick"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Prezime"
+        android:layout_toRightOf="@id/Datum"
+        android:background="@drawable/ic_date_range_black_24dp" />
+
+    <EditText
+        android:id="@+id/Adresa"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Datum"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Adresa"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Telefon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Adresa"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Telefon"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Telefon"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Email"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Korisik"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Korisničko ime"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Lozinka"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Korisik"
+        android:layout_marginLeft="33dp"
+        android:backgroundTint="#12A89D"
+        android:gravity="center"
+        android:hint="Lozinka"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnSnimi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lozinka"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:text="SNIMI"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

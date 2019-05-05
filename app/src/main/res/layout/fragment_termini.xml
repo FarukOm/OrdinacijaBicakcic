@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TerminiFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novi zahtjevi za termin: "
+        android:textColor="#12A89D"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        />
+    <ListView
+        android:id="@+id/listaNovih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/text"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/listaNovih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evidentirani zahtjevi: "
+        android:textColor="#12A89D"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        />
+    <ListView
+        android:id="@+id/listaEvidentiranih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_below="@id/text2"
+        android:layout_margin="10dp">
+    </ListView>
+
+</RelativeLayout>

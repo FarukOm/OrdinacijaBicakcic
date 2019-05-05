@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Naslovna_KorisnikFragment">
+
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Dobrodošli,"
+        android:textColor="#12A89D"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/naslovIme"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@id/naslov"
+        android:textColor="#12A89D"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/naslov"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Današnji termini:"
+        android:textColor="#12A89D"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/terminOpis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title1"
+
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#12A89D"
+        android:textSize="15dp" />
+</RelativeLayout>
